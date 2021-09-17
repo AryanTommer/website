@@ -1,31 +1,5 @@
-// import React from 'react'
-// import PropTypes from "prop-types";
-// import classNames from "classnames";
-// import AOS from "aos/dist/aos";
-// import "aos/dist/aos.css";
-import {
-  Grid,
-  Typography,
-  Card,
-  Button,
-  Hidden,
-  Box,
-  Paper,
-  styled,
-} from "@mui/material";
-// import {
-//   withStyles,
-//   withWidth,
-//   isWidthUp,
-// } from "@material-ui/core";
+import { style } from "@mui/system";
 
-// import WaveBorder from "../../../component/waveborder/WaveBorder";
-// import Lottyanimation from "../../../component/lotty/lottyanimation";
-// import one from "../../../component/lotty/lotty_file/one.json";
-// import Textanimation from "../../../component/textanimation/Textanimation";
-
-
-// AOS.init({ once: false })
 const styles = (theme) => ({
   extraLargeButtonLabel: {
     fontSize: theme.typography.body1.fontSize,
@@ -48,7 +22,7 @@ const styles = (theme) => ({
   card: {
 
     boxShadow: theme.shadows[4],
-    marginTop: theme.spacing(-3),
+    // marginTop: theme.spacing(-3),
     marginLeft: theme.spacing(-1),
     marginRight: theme.spacing(-1),
     [theme.breakpoints.up("xs")]: {
@@ -83,15 +57,10 @@ const styles = (theme) => ({
 
     paddingBottom: theme.spacing(2),
   },
-  image: {
-    maxWidth: "100%",
-    verticalAlign: "middle",
-    borderRadius: theme.shape.borderRadius,
-    boxShadow: theme.shadows[4],
-  },
+
   container: {
-    marginTop: theme.spacing(6),
-    marginBottom: theme.spacing(12),
+    marginTop: theme.spacing(0),
+    marginBottom: theme.spacing(0),
     [theme.breakpoints.down("md")]: {
       marginBottom: theme.spacing(9),
     },
@@ -112,11 +81,7 @@ const styles = (theme) => ({
     marginLeft: theme.spacing(-2),
     marginRight: theme.spacing(-2),
   },
-  mobileViewContent: {
-    [theme.breakpoints.down("sm")]: {
-      justifyContent: "center"
-    },
-  }
 
+});
 
-});;
+export default styles
