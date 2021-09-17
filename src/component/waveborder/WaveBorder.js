@@ -36,7 +36,7 @@ function WaveBorder(props) {
     ...rest
   } = props;
   return (
-    <div className={className} style={{ background: 'linear-gradient(to bottom, #ffffff 0%,#f6f6f6 47%,#ededed 100%)'}} {...rest}>
+    <div className={className} style={{ background:{upperColor} }} {...rest}>
       <svg
         className={classes.waves}
         xmlns="http://www.w3.org/2000/svg"
@@ -70,3 +70,4 @@ export default withStyles(styles)(WaveBorder);
 
 // 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' 
 //style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)'}}
+//'linear-gradient(to bottom, #ffffff 0%,#f6f6f6 47%,#ededed 100%)'

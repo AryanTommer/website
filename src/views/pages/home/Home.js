@@ -22,6 +22,8 @@ import WaveBorder from "../../../component/waveborder/WaveBorder";
 import Lottyanimation from "../../../component/lotty/lottyanimation";
 import one from "../../../component/lotty/lotty_file/one.json";
 import Textanimation from "../../../component/textanimation/Textanimation";
+import {IntoShape} from "../../../component/styles/Layouts";
+import Feature from "../../../component/feature/Feature"
 
 
 AOS.init({ once: false })
@@ -89,8 +91,8 @@ const styles = (theme) => ({
     boxShadow: theme.shadows[4],
   },
   container: {
-    marginTop: theme.spacing(6),
-    marginBottom: theme.spacing(12),
+    // marginTop: theme.spacing(6),
+    // marginBottom: theme.spacing(12),
     [theme.breakpoints.down("md")]: {
       marginBottom: theme.spacing(9),
     },
@@ -125,18 +127,21 @@ function Home(props) {
   const { classes, theme, width } = props;
   return (
     <>
-      {/* <div className={classNames("lg-p-top", classes.wrapper)}>
-          <div className={classNames("container-fluid", classes.container)}> */}
+      <div className={classNames( classes.wrapper)}>
+          <div className={classNames("container-fluid", classes.container)}>
       <Box display="flex" justifyContent="center" className="row">
+       
         <Card
           className={classes.card}
           data-aos-delay="1000"
           data-aos="zoom-in"
 
         >
+          
           <div className={classNames(classes.containerFix, "container")}>
             <Box justifyContent="space-between" className="row">
               <Grid item xs={12} md={5}>
+                
                 <Box
                   display="flex"
                   flexDirection="column"
@@ -144,6 +149,7 @@ function Home(props) {
                   height="100%"
 
                 >
+                   <IntoShape/>
                   <Box mb={4} >
                     <Typography
                       variant={isWidthUp("lg", width) ? "h3" : "h4"}
@@ -164,7 +170,7 @@ function Home(props) {
                         variant={isWidthUp("lg", width) ? "h7" : "body1"}
                         color="textSecondary"
                       >
-                        <strong><i>Openkite's</i></strong> all modules provide a advance Intelligen 
+                        <strong><i>Openkite's</i></strong> all modules provide a advance Intelligen
                         Tchnology with embeded AI and Machine-learning
                       </Typography>
                     </Box>
@@ -190,7 +196,7 @@ function Home(props) {
             </Box>
           </div>
           <WaveBorder
-            upperColor={theme.palette.secondary.main}
+            upperColor='linear-gradient(to bottom, #ffffff 0%,#f6f6f6 47%,#ededed 100%)'
             lowerColor="#FFFFFF"
             className={classes.waveBorder}
             animationNegativeDelay={2}
@@ -198,28 +204,29 @@ function Home(props) {
         </Card>
 
       </Box>
-      {/* </div> 
-        </div> */}
+      </div> 
+        </div>
       {/* <WaveBorder
-         upperColor={theme.palette.secondary.main}
+         upperColor= 'linear-gradient(to bottom, #ffffff 0%,#f6f6f6 47%,#ededed 100%)'
           lowerColor="#FFFFFF"
           className={classes.waveBorder}
           animationNegativeDelay={2}
         /> */}
-         <Paper elevation={9} >
-                      <Typography
-                        variant={isWidthUp("lg", width) ? "h5" : "body1"}
-                        color="textSecondary"
-                      >
-                        <strong><i>Openkite's</i></strong> strategic partnership with google cloude provides 
-                        coustuomers with a sustainable operactional advantegacross multiple industries
-                      </Typography>
-                      </Paper >
+      {/* <Paper elevation={9} >
+        <Typography
+          variant={isWidthUp("lg", width) ? "h5" : "body1"}
+          color="textSecondary"
+        >
+          <strong><i>Openkite's</i></strong> strategic partnership with google cloude provides
+          coustuomers with a sustainable operactional advantegacross multiple industries
+        </Typography>
+      </Paper > */}
+      < Feature/>
 
     </>
   );
 }
-
+ 
 Home.propTypes = {
   classes: PropTypes.object,
   width: PropTypes.string,
