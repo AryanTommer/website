@@ -12,8 +12,8 @@ import {
   CSidebarNavDropdown,
   CSidebarNavItem,
 } from '@coreui/react'
-import logo from "../assets/logo3.png";
-import slogo from "../assets/slogo.png";
+import logo from "../assets/logo/logo3.png";
+import slogo from "../assets/logo/slogo.png";
 
 import CIcon from '@coreui/icons-react'
 

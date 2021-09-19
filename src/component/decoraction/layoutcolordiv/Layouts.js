@@ -13,14 +13,14 @@ const Shape = css`
 // background:linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
 `;
 
- export const IntoShape = styled.div`
+ export const HeroSectionShape = styled.div`
   ${Shape}
-  clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 50% 100%);
+  clip-path: polygon(100% 0%, 100% 0%, 100% 40%, 50% 40%);
  background-color: crimson;
 
 `;
-export const FeatureShape = styled.div`
+export const InfosectionShape = styled.div`
   ${Shape}
-  clip-path: polygon(0 0, 55% 0%, 33% 100%, 0 100%);
+  clip-path: polygon(0 40%, 50% 40%, 0% 100%, 0 100%);
   background-color: pink;
 `;

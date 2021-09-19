@@ -1,5 +1,6 @@
 import React from 'react';
 import Lottie from 'react-lottie';
+import { Box } from '@mui/system';
 
 
 
@@ -14,10 +15,10 @@ export default function Lottyanimation(props) {
     };
   
   return (
-    <div>
+    <Box >
       <Lottie 
 	    options={defaultOptions}
       />
-    </div>
+    </Box>
   );
   }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './scss/style.scss';
 
+
 import { MuiThemeProvider, CssBaseline } from "@material-ui/core";
 import theme from "./theme";
 import GlobalStyles from "./GlobalStyles";

@@ -2,6 +2,11 @@ import 'react-app-polyfill/ie11'; // For IE 11 support
 import 'react-app-polyfill/stable';
 import 'core-js';
 import './polyfill'
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import "aos/dist/aos.css";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';

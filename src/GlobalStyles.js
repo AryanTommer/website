@@ -42,13 +42,13 @@ const styles = theme => ({
     ".row": {
       display: "flex",
       flexWrap: "wrap",
-      marginRight: -theme.spacing(2),
-      marginLeft: -theme.spacing(2)
+      marginRight: -theme.spacing(1),
+      marginLeft: -theme.spacing(1)
     },
     ".container-fluid": {
       width: "100%",
-      paddingRight: theme.spacing(2),
-      paddingLeft: theme.spacing(2),
+      paddingRight: theme.spacing(1),
+      paddingLeft: theme.spacing(1),
       marginRight: "auto",
       marginLeft: "auto",
       maxWidth: 1370
