@@ -21,11 +21,11 @@ import {
 } from "@material-ui/core";
 
 import styles from "./HeroSection.elements"
-import WaveBorder from "../decoraction/waveborder/WaveBorder";
-import Lottyanimation from "../decoraction/lotty/lottyanimation";
-import one from "../decoraction/lotty/lotty_file/one.json";
-import Textanimation from "../decoraction/textanimation/Textanimation";
-import { HeroSectionShape,InfosectionShape} from "../decoraction/layoutcolordiv/Layouts";
+import WaveBorder from "src/component/decoraction/waveborder/WaveBorder";
+import Lottyanimation from "src/component/decoraction/lotty/lottyanimation";
+import herosection from "src/assets/lotty_file/herosection.json";
+import Textanimation from "src/component/decoraction/textanimation/Textanimation";
+import { HeroSectionShape,InfosectionShape} from "src/component/decoraction/layoutcolordiv/Layouts";
 import App from "src/assets/img/app.png"
 
 
@@ -72,7 +72,7 @@ function HeroSection(props) {
                         </Box>
                         <Hidden smUp>
                           <Box sx={{height: '100vh',width: '90%',}} >
-                            <Lottyanimation lottyfile={one} />
+                            <Lottyanimation lottyfile={herosection} />
                             </Box>
                         
                         </Hidden>
@@ -104,7 +104,7 @@ function HeroSection(props) {
                     <Hidden smDown>
                       <Grid item xs={12} sm={7}  sx={{height: '80vh',width: '90vw',mt:'0px'}}  >
   
-                        <Lottyanimation lottyfile={one} />
+                        <Lottyanimation lottyfile={herosection} />
                       </Grid>
                       </Hidden>
                       </Grid>

@@ -1,12 +1,11 @@
 
-
 const styles = (theme) => ({
 
     card: {
         boxShadow: theme.shadows[4],
-        // marginTop: theme.spacing(-3),
-        marginLeft: theme.spacing(-1),
-        marginRight: theme.spacing(-1),
+         marginTop: theme.spacing(-1),
+        marginLeft: theme.spacing(0),
+        marginRight: theme.spacing(0),
         [theme.breakpoints.up("xs")]: {
             paddingTop: theme.spacing(3),
             paddingBottom: theme.spacing(3),
@@ -36,8 +35,7 @@ const styles = (theme) => ({
     wrapper: {
         position: "relative",
         // backgroundColor: theme.palette.secondary.main,
-
-        paddingBottom: theme.spacing(2),
+      paddingBottom: theme.spacing(2),
     },
 
     container: {
