@@ -18,11 +18,11 @@ import {
   isWidthUp,
 } from "@material-ui/core";
 
-import WaveBorder from "../../../component/decoraction/waveborder/WaveBorder";
-import Lottyanimation from "../../../component/decoraction/lotty/lottyanimation";
-import one from "../../../component/decoraction/lotty/lotty_file/one.json";
-import Textanimation from "../../../component/decoraction/textanimation/Textanimation";
-import { IntoShape } from "../../../component/decoraction/layoutcolordiv/Layouts";
+import WaveBorder from "../../../components/decoraction/waveborder/WaveBorder";
+import Lottyanimation from "../../../components/decoraction/lotty/lottyanimation";
+import one from "../../../components/decoraction/lotty/lotty_file/one.json";
+import Textanimation from "../../../components/decoraction/textanimation/Textanimation";
+import { IntoShape } from "../../../components/decoraction/layoutcolordiv/Layouts";
 
 
 

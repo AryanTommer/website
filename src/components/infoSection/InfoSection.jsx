@@ -14,7 +14,7 @@ import {
   withWidth,
   isWidthUp,
 } from "@material-ui/core";
-import Lottyanimation from "src/component/decoraction/lotty/lottyanimation";
+import Lottyanimation from "src/components/decoraction/lotty/lottyanimation";
 import info from "src/assets/lotty_file/info.json";
 import styles from "./InfoSection.element"
 

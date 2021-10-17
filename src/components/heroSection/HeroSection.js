@@ -21,11 +21,11 @@ import {
 } from "@material-ui/core";
 
 import styles from "./HeroSection.elements"
-import WaveBorder from "src/component/decoraction/waveborder/WaveBorder";
-import Lottyanimation from "src/component/decoraction/lotty/lottyanimation";
+import WaveBorder from "src/components/decoraction/waveborder/WaveBorder";
+import Lottyanimation from "src/components/decoraction/lotty/lottyanimation";
 import herosection from "src/assets/lotty_file/herosection.json";
-import Textanimation from "src/component/decoraction/textanimation/Textanimation";
-import { HeroSectionShape,InfosectionShape} from "src/component/decoraction/layoutcolordiv/Layouts";
+import Textanimation from "src/components/decoraction/textanimation/Textanimation";
+import { HeroSectionShape,InfosectionShape} from "src/components/decoraction/layoutcolordiv/Layouts";
 import App from "src/assets/img/app.png"
 
 
@@ -223,3 +223,11 @@ function HeroSection(props) {
         </div>
     </div>
 </section> */}
+
+
+// Learn new skills,
+// gain more experience
+// Our mission is to spread education that is easy accessible and everyone can learn.
+// WHAT WE DO
+
+// You do business we do the softwere
